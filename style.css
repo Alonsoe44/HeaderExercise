@@ -5,14 +5,20 @@
     font-family: "Karla", sans-serif;
 }
 body {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .Navegation-bar {
     display: flex;
-    background-color: orange;
+    background-color: rgb(255, 225, 170);
     justify-content: space-around;
     align-items: center;
     height: 7rem;
+}
+.Navegation-bar__logo {
+    width: 8rem;
+}
+.container-links {
+    display: none;
 }
 .Navegation-bar__box-group {
     display: flex;
@@ -23,11 +29,12 @@ body {
     list-style: none outside none;
 }
 a {
+    display: none;
     text-decoration: none;
     color: inherit;
 }
 .button-group {
-    width: 15%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 }
@@ -37,9 +44,13 @@ a {
     border-radius: 5rem;
     width: 11rem;
     height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+.Navegation-bar__button:hover {
+    background-color: red;
+    cursor: pointer;
 }
 .Navegation-bar__button--green {
-    background-color: green;
+    background-color: rgb(74, 194, 74);
     color: white;
 }
