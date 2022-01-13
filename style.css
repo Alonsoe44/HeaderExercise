@@ -9,16 +9,13 @@ body {
 }
 .Navegation-bar {
     display: flex;
-    background-color: rgb(255, 225, 170);
     justify-content: space-around;
     align-items: center;
     height: 7rem;
 }
 .Navegation-bar__logo {
     width: 8rem;
-}
-.container-links {
-    display: none;
+    margin-left: 5%;
 }
 .Navegation-bar__box-group {
     display: flex;
@@ -27,6 +24,7 @@ body {
 }
 .Navegation-bar__box {
     list-style: none outside none;
+    color: #5a6c78;
 }
 a {
     display: none;
@@ -37,20 +35,60 @@ a {
     width: 60%;
     display: flex;
     justify-content: space-around;
+    margin-right: 5%;
 }
 .Navegation-bar__button {
     background: none;
     border: none;
     border-radius: 5rem;
     width: 11rem;
-    height: 3rem;
-    font-size: 1rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    color: #5a6c78;
 }
 .Navegation-bar__button:hover {
-    background-color: red;
     cursor: pointer;
+    border: #44d4a4 solid;
 }
 .Navegation-bar__button--green {
-    background-color: rgb(74, 194, 74);
-    color: white;
+    background-color: #44d4a4;
+    color: rgb(255, 255, 255);
+}
+.Navegation-bar__button--green:hover {
+    background-color: white;
+    color: #44d4a4;
+}
+.divisional-line {
+    background-color: #999999;
+    height: 0.1rem;
+    width: 90%;
+    border-radius: 3px;
+    margin: auto;
+}
+@media only screen and (min-width: 1500px) {
+}
+@media only screen and (min-width: 500px) {
+    * {
+        font-size: 1.2rem;
+    }
+    .Navegation-bar {
+        height: 7rem;
+    }
+    .Navegation-bar__logo {
+        height: 3rem;
+        width: auto;
+        margin-left: none;
+    }
+    a {
+        display: flex;
+    }
+    .button-group {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .Navegation-bar__button {
+        font-size: 1.2rem;
+        height: 2.5rem;
+    }
 }
