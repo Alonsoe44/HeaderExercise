@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body {
+    font-size: 1.2rem;
+}
+.Navegation-bar {
+    display: flex;
+    background-color: orange;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+}
+.Navegation-bar__box-group {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.Navegation-bar__box {
+    list-style: none outside none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.button-group {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.Navegation-bar__button {
+    background: none;
+    border: none;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+.Navegation-bar__button--green {
+    background-color: green;
+    color: white;
+}
